@@ -58,4 +58,4 @@ ENV LD_LIBRARY_PATH="/opt/oracle/instantclient"
 
 EXPOSE 9560/tcp
 # IPv6 support is not enabled by default, only bind IPv4
-ENTRYPOINT ["query-exporter", "/config.yaml", "-H", "0.0.0.0"]
+ENTRYPOINT ["query-exporter", "/config.yaml", "-H", "0.0.0.0","-L","DEBUG"]
